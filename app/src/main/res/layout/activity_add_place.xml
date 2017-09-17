@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.trestanity.bizznewlayout.AddPlaceActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etBizzName"
+                    android:layout_gravity="center_vertical"
+                    android:hint="Enter Bizz name"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:maxLength="50"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spAddPlaceCategory"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etSubCategory"
+                    android:layout_gravity="center_vertical"
+                    android:hint="Enter sub-category"
+                    android:gravity="center"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ., "
+                    android:maxLines="1"
+                    android:maxLength="20"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etMobileNumber"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="number"
+                    android:hint="Enter mobile number"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:maxLength="11" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etTelephoneNumber"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="number"
+                    android:hint="Enter telephone number"
+                    android:gravity="center"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etLandmark"
+                    android:layout_gravity="center_vertical"
+                    android:hint="Enter landmark"
+                    android:gravity="center"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789. "
+                    android:maxLines="1"
+                    android:maxLength="50"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spAddPlaceRegion"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spAddPlaceProvince"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spAddPlaceCity"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etStreet"
+                    android:layout_gravity="center_vertical"
+                    android:hint="Enter Street"
+                    android:maxLength="30"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789. "
+                    android:gravity="center"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etBarangay"
+                    android:layout_gravity="center_vertical"
+                    android:hint="Enter Barangay"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789. "
+                    android:maxLength="20"
+                    android:gravity="center"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:id="@+id/rgLocation"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Current Location"
+                        android:id="@+id/rbCurrentLocation"
+                        android:layout_gravity="center_horizontal"
+                        android:checked="true"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enter Location"
+                        android:id="@+id/rbEnterLocation"
+                        android:layout_gravity="center_horizontal"
+                        android:checked="false"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="10dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:id="@+id/lllocation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etLatitude"
+                        android:layout_gravity="center_vertical"
+                        android:hint="Enter latitude"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:maxLength="11"
+                        android:inputType="numberDecimal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etLongitude"
+                        android:layout_gravity="center_vertical"
+                        android:hint="Enter longitude"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:maxLength="11"
+                        android:inputType="numberDecimal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Usage : "
+                        android:id="@+id/textView" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:id="@+id/rgUsage"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Public"
+                            android:id="@+id/rbPublic"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="true"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Private"
+                            android:id="@+id/rbPrivate"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="false"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="10dp"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--insert tagging-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:id="@+id/llprivate">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:id="@+id/rgExistence"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New"
+                            android:id="@+id/rbNew"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="true"
+                            android:textSize="18sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Existing"
+                            android:id="@+id/rbExisting"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="false"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="10dp"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etTag"
+                        android:layout_gravity="center_vertical"
+                        android:hint="Enter private tag"
+                        android:maxLength="30"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789. "
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Availability 24/7?: "
+                        android:id="@+id/textView2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:id="@+id/rgAvailability"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:id="@+id/rbYes"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="false"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:id="@+id/rbNo"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="true"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="10dp"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSaveNearby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_save" />
+
+</FrameLayout>
